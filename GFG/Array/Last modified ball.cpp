@@ -1,0 +1,17 @@
+class Solution
+{
+public:
+    int solve(int N, vector<int> A)
+    {
+        // code here
+        int i;
+        for (i = N - 1; i >= 0; i--)
+        {
+            if (A[i] + 1 <= 9)
+            {
+                return i + 1;
+            }
+        }
+        return -1;
+    }
+};
